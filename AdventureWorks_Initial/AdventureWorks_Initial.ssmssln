@@ -5,13 +5,16 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Basic_Selects", "Basic_Selects\Basic_Selects.ssmssqlproj", "{B15EFDB2-85D3-4A85-B27C-C87E2F5E0D96}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Join_two", "Join_two\Join_two.ssmssqlproj", "{FE28ED08-B7FA-481E-885D-A147B9EB2B6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B15EFDB2-85D3-4A85-B27C-C87E2F5E0D96}.Default|Default.ActiveCfg = Default
-		{20DD2F51-101F-4E57-856B-5F8A9EF04FE3}.Default|Default.ActiveCfg = Default
+		{F98E1FBD-D1F3-4E34-B4B7-204546F6FFC3}.Default|Default.ActiveCfg = Default
+		{FE28ED08-B7FA-481E-885D-A147B9EB2B6B}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
