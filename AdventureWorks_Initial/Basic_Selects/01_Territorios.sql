@@ -13,13 +13,15 @@ select * from Sales.SalesTerritory
 where CountryRegionCode = 'US';
 -- muestra algunas columnas de una tabla y algunas filas
 select [Name] as nombre, [CountryRegionCode] as pais, [SalesLastYear] as Ventas from Sales.SalesTerritory
-where CountryRegionCode = 'US' or CountryRegionCode = 'AU';
+where CountryRegionCode = 'US' or CountryRegionCode = 'AU' or CountryRegionCode = 'GB';
 
 select [Name] as nombre, [CountryRegionCode] as pais, [SalesLastYear] as Ventas from Sales.SalesTerritory
-where CountryRegionCode in ('US','AU');
+where CountryRegionCode in ('US','AU', 'GB');
 
 select [Name] as nombre, [CountryRegionCode] as pais, [SalesLastYear] as Ventas from Sales.SalesTerritory
 where CountryRegionCode not in ('US','AU');
 
 select [Name] as nombre, [CountryRegionCode] as pais, [SalesLastYear] as Ventas from Sales.SalesTerritory
-where CountryRegionCode <> 'US' and SalesLastYear > 2000000;
+where CountryRegionCode != 'US' or SalesLastYear > 2000000;
+select [Name] as nombre, [CountryRegionCode] as pais, [SalesLastYear] as Ventas from Sales.SalesTerritory
+where CountryRegionCode <> 'US' or SalesLastYear > 2000000;

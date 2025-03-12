@@ -14,15 +14,19 @@ Queries para practivar el filtrado
 
 -- 06 ¿Cuáles son las órdenes donde Freight es mayor que el 10% de SubTotal?
 
+-- 06 bis ¿Cuáles son las órdenes donde Freight es mayor que el 1% de SubTotal?
+
 -- 07 ¿Cuáles son las filas en las que el EmployeeID está en el rango de 250 a 260?
 
 -- 08 ¿Qué registros tienen un PurchaseOrderID igual a 9 o 10?
 
 -- 09 ¿Qué filas tienen un ShipDate exactamente igual a la fecha de ModifiedDate?
 
+-- 09 BIS ¿Qué filas tienen un ShipDate distinto la fecha de ModifiedDate? (4012)
+
 -- 10 ¿Qué filas tienen un SubTotal mayor o igual a 50,000 y un Freight menor o igual a 2,000?
 
--- 11 ¿Qué filas tienen un TaxAmt superior a 10 y un TotalDue inferior a 100?
+-- 11 ¿Qué filas tienen un TaxAmt superior a 10 y un TotalDue inferior a 1000?
 
 -- 12 ¿Qué filas tienen un Status que no es 4?
 
