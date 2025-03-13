@@ -18,7 +18,7 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
-        <ConnectionNode Name="SERVIDORDELL:SERVIDORDELL\lcasado">
+        <ConnectionNode Name="SERVIDORDELL:CITRIXDA\campusctec">
           <Created>2025-03-12T23:54:00.4616452+01:00</Created>
           <Type>SQL</Type>
           <Server>SERVIDORDELL</Server>
@@ -61,17 +61,23 @@
           <AssociatedConnUserName>curso</AssociatedConnUserName>
           <FullPath>03_PO_header_soluciones.sql</FullPath>
         </FileNode>
+        <FileNode Name="04_PO_header_AGG_Explicacion.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <FullPath>04_PO_header_AGG_Explicacion.sql</FullPath>
+        </FileNode>
         <FileNode Name="04_PO_header_AGG_preguntas.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
           <FullPath>04_PO_header_AGG_preguntas.sql</FullPath>
         </FileNode>
-        <FileNode Name="04_Purchase_order_header_Aggr.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>04_Purchase_order_header_Aggr.sql</FullPath>
+        <FileNode Name="04_PO_header_AGG_Soluciones.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <FullPath>04_PO_header_AGG_Soluciones.sql</FullPath>
         </FileNode>
         <FileNode Name="Cuenta tablas en DB.sql">
           <AssociatedConnectionMoniker />

@@ -105,7 +105,7 @@ SELECT ShipMethodID, MAX(TaxAmt) FROM Purchasing.PurchaseOrderHeader
 GROUP BY ShipMethodID;
 
 -- 17 ¿Cuántos registros hay por cada combinación de EmployeeID y ShipMethodID?
-SELECT EmployeeID, ShipMethodID, count(*) FROM Purchasing.PurchaseOrderHeader
+SELECT EmployeeID, ShipMethodID, count(*) as pedidos FROM Purchasing.PurchaseOrderHeader
 GROUP BY EmployeeID, ShipMethodID
 ORDER BY EmployeeID, ShipMethodID;
 
