@@ -1,0 +1,3 @@
+
+CREATE DATABASE Apol
+COLLATE Modern_Spanish_CS_AS;
