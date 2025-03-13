@@ -20,7 +20,7 @@ VARP
 
 -- 00 Mostramos 10 registros de la tabla para familiarizarnos con ella
 USE AdventureWorks2022;
-Select top 10 * from Purchasing.PurchaseOrderHeader;
+Select * from Purchasing.PurchaseOrderHeader;
 
 -- 01 Cual ha sido el valor total comprado registrado en la base de datos (63791994,838)
 SELECT SUM(SubTotal) AS TotalSubTotal
@@ -56,7 +56,8 @@ GROUP BY ShipMethodID;
 -- 08 Encuentra el valor máximo de SubTotal para cada proveedor.
 SELECT VendorID, MAX(SubTotal) AS MaxSubTotalPerVendor
 FROM Purchasing.PurchaseOrderHeader
-GROUP BY VendorID;
+GROUP BY VendorID
+ORDER BY MaxSubTotalPerVendor DESC;
 
 -- 09 Calcula el promedio de Freight para cada estado.
 SELECT Status, AVG(Freight) AS AvgFreightByStatus
@@ -68,13 +69,14 @@ GROUP BY Status;
 SELECT EmployeeID, SUM(TotalDue) AS TotalDuePerEmployee
 FROM Purchasing.PurchaseOrderHeader
 GROUP BY EmployeeID
-HAVING SUM(TotalDue) > 50000;
+HAVING SUM(TotalDue) > 7000000;
 
 
 -- 11 Cuenta el número de órdenes por año basado en OrderDate.
 SELECT YEAR(OrderDate) AS Year, COUNT(*) AS OrdersPerYear
 FROM Purchasing.PurchaseOrderHeader
-GROUP BY YEAR(OrderDate);
+GROUP BY YEAR(OrderDate)
+ORDER BY OrdersPerYear;
 
 
 -- 12 Encuentra el valor mínimo de Freight para cada método de envío.
@@ -92,6 +94,8 @@ GROUP BY VendorID;
 SELECT VendorID, COUNT(*) AS TotalOrdersPerVendor, SUM(SubTotal) as SumaOrdersPerVendor
 FROM Purchasing.PurchaseOrderHeader
 GROUP BY VendorID;
+
+
 
 -- 15 Cuenta el número de órdenes por proveedor y el total de sus pedidos
 SELECT VendorID, SUM(SubTotal) / COUNT(*) AS PedidoMedioPerVendor
@@ -112,8 +116,13 @@ HAVING COUNT(*) > 10;
 -- 18 Muestra empleados con un núemro de órdenes comprendido entre 100 y 200.
 SELECT EmployeeID, COUNT(*) AS OrdersPerEmployee
 FROM Purchasing.PurchaseOrderHeader
+WHERE ShipMethodID BETWEEN 1 AND 3
 GROUP BY EmployeeID
 HAVING COUNT(*) BETWEEN 100 AND 200;
+
+SELECT COUNT(*) AS OrdersPerEmployee
+FROM Purchasing.PurchaseOrderHeader
+WHERE ShipMethodID BETWEEN 4 AND 5
 
 -- 19 Calcula el promedio de TotalDue para cada método de envío.
 SELECT ShipMethodID, AVG(TotalDue) AS AvgTotalDueByShipMethod
@@ -124,6 +133,8 @@ GROUP BY ShipMethodID;
 SELECT YEAR(OrderDate) AS Year, MONTH(OrderDate) AS Month, SUM(TotalDue) AS TotalSales
 FROM Purchasing.PurchaseOrderHeader
 GROUP BY YEAR(OrderDate), MONTH(OrderDate);
+
+
 
 -- 21 Calcula las ventas totales por mes y año. Muestra primero los datos de los años más recientes.
 SELECT YEAR(OrderDate) AS Year, MONTH(OrderDate) AS Month, SUM(TotalDue) AS TotalSales
@@ -138,9 +149,9 @@ GROUP BY EmployeeID, VendorID
 ORDER BY EmployeeID;
 
 -- 24 Encuentra la suma de SubTotal por empleado y proveedor. Agrupa los datos por empleado
-SELECT EmployeeID, VendorID, GROUPING_ID(EmployeeID, VendorID) as Niveldeagrupacion, SUM(SubTotal) AS TotalSubTotal
+SELECT EmployeeID, VendorID, GROUPING_ID(VendorID,  EmployeeID) as Niveldeagrupacion, SUM(SubTotal) AS TotalSubTotal
 FROM Purchasing.PurchaseOrderHeader
-GROUP BY GROUPING SETS ((EmployeeID), (VendorID))
+GROUP BY GROUPING SETS ((),(EmployeeID), (VendorID))
 ORDER BY EmployeeID;
 
 -- 25 Cuenta cuántas órdenes se enviaron en cada fecha.
@@ -189,8 +200,9 @@ SELECT STRING_AGG(CAST(ShipMethodID AS NVARCHAR(MAX)), ', ') AS MetodosEnvio
 FROM Purchasing.PurchaseOrderHeader;
 
 -- 33 Elabora una lista con los nombres de las tiendas Atendidas por cada vendedor
-SELECT SalesPersonID, STRING_AGG(CAST(Name AS NVARCHAR(MAX)), ', ') AS ListaTiendas
+SELECT SalesPersonID, STRING_AGG(CAST(Name AS NVARCHAR), ', ') AS ListaTiendas
 FROM [Sales].[Store]
+WHERE SalesPersonID = 282
 GROUP BY SalesPersonID;
 
 select * from [AdventureWorks2022].[Sales].[Store]
