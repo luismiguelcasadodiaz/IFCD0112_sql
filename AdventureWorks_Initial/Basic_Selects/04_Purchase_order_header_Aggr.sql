@@ -1,161 +1,232 @@
 /*
+FUnciones de Agregad0 
+APPROX_COUNT_DISTINCT
+CHECKSUM_AGG
+COUNT
+COUNT_BIG
+GROUPING
+GROUPING_ID
+STRING_AGG
 
-
-
-
-
-
+AVG
+MAX
+MIN
+STDEV
+STDEVP
+SUM
+VAR
+VARP
 */
+
+-- 00 Mostramos 10 registros de la tabla para familiarizarnos con ella
+USE AdventureWorks2022;
+Select top 10 * from Purchasing.PurchaseOrderHeader;
+
+-- 01 Cual ha sido el valor total comprado registrado en la base de datos (63791994,838)
 SELECT SUM(SubTotal) AS TotalSubTotal
-FROM PurchaseOrder;
-Calcula la suma total de los valores de SubTotal.
+FROM Purchasing.PurchaseOrderHeader;
 
-sql
+-- 02 Cual ha sido el valor promedio del impuesto
 SELECT AVG(TaxAmt) AS AverageTax
-FROM PurchaseOrder;
-Calcula el promedio del impuesto TaxAmt.
+FROM Purchasing.PurchaseOrderHeader;
 
-sql
+-- 03 Encuentra el valor máximo de Freight.
 SELECT MAX(Freight) AS MaxFreight
-FROM PurchaseOrder;
-Encuentra el valor máximo de Freight.
+FROM Purchasing.PurchaseOrderHeader;
 
-sql
+-- 04 Encuentra el valor mínimo de TotalDue.
 SELECT MIN(TotalDue) AS MinTotalDue
-FROM PurchaseOrder;
-Encuentra el valor mínimo de TotalDue.
+FROM Purchasing.PurchaseOrderHeader;
 
-sql
+-- 05 Cuenta el total de registros en la tabla. (4012)
 SELECT COUNT(*) AS TotalOrders
-FROM PurchaseOrder;
-Cuenta el total de registros en la tabla.
+FROM Purchasing.PurchaseOrderHeader;
 
-sql
+
+-- 06 Cuenta cuántas órdenes realizó cada empleado.
 SELECT EmployeeID, COUNT(*) AS OrdersPerEmployee
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY EmployeeID;
-Cuenta cuántas órdenes realizó cada empleado.
 
-sql
+-- 07 Calcula la suma total de TotalDue para cada método de envío.
 SELECT ShipMethodID, SUM(TotalDue) AS TotalByShipMethod
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY ShipMethodID;
-Calcula la suma total de TotalDue para cada método de envío.
 
-sql
+-- 08 Encuentra el valor máximo de SubTotal para cada proveedor.
 SELECT VendorID, MAX(SubTotal) AS MaxSubTotalPerVendor
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY VendorID;
-Encuentra el valor máximo de SubTotal para cada proveedor.
 
-sql
+-- 09 Calcula el promedio de Freight para cada estado.
 SELECT Status, AVG(Freight) AS AvgFreightByStatus
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY Status;
-Calcula el promedio de Freight para cada estado.
 
-sql
+
+-- 10 Encuentra los empleados cuyo total de TotalDue supera los 50,000.
 SELECT EmployeeID, SUM(TotalDue) AS TotalDuePerEmployee
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY EmployeeID
 HAVING SUM(TotalDue) > 50000;
-Encuentra los empleados cuyo total de TotalDue supera los 50,000.
 
-sql
+
+-- 11 Cuenta el número de órdenes por año basado en OrderDate.
 SELECT YEAR(OrderDate) AS Year, COUNT(*) AS OrdersPerYear
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY YEAR(OrderDate);
-Cuenta el número de órdenes por año basado en OrderDate.
 
-sql
+
+-- 12 Encuentra el valor mínimo de Freight para cada método de envío.
 SELECT ShipMethodID, MIN(Freight) AS MinFreightByShipMethod
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY ShipMethodID;
-Encuentra el valor mínimo de Freight para cada método de envío.
 
-sql
+
+-- 13 Cuenta el número de órdenes por proveedor.
 SELECT VendorID, COUNT(*) AS TotalOrdersPerVendor
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY VendorID;
-Cuenta el número de órdenes por proveedor.
 
-sql
+-- 14 Cuenta el número de órdenes por proveedor y el total de sus pedidos
+SELECT VendorID, COUNT(*) AS TotalOrdersPerVendor, SUM(SubTotal) as SumaOrdersPerVendor
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY VendorID;
+
+-- 15 Cuenta el número de órdenes por proveedor y el total de sus pedidos
+SELECT VendorID, SUM(SubTotal) / COUNT(*) AS PedidoMedioPerVendor
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY VendorID;
+
+-- 16 Encuentra el valor máximo de TaxAmt para cada estado.
 SELECT Status, MAX(TaxAmt) AS MaxTaxByStatus
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY Status;
-Encuentra el valor máximo de TaxAmt para cada estado.
 
-sql
+-- 17 Muestra empleados con más de 10 órdenes.
 SELECT EmployeeID, COUNT(*) AS OrdersPerEmployee
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY EmployeeID
 HAVING COUNT(*) > 10;
-Muestra empleados con más de 10 órdenes.
 
-sql
+-- 18 Muestra empleados con un núemro de órdenes comprendido entre 100 y 200.
+SELECT EmployeeID, COUNT(*) AS OrdersPerEmployee
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY EmployeeID
+HAVING COUNT(*) BETWEEN 100 AND 200;
+
+-- 19 Calcula el promedio de TotalDue para cada método de envío.
 SELECT ShipMethodID, AVG(TotalDue) AS AvgTotalDueByShipMethod
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY ShipMethodID;
-Calcula el promedio de TotalDue para cada método de envío.
 
-sql
+-- 20 Calcula las ventas totales por mes y año.
 SELECT YEAR(OrderDate) AS Year, MONTH(OrderDate) AS Month, SUM(TotalDue) AS TotalSales
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY YEAR(OrderDate), MONTH(OrderDate);
-Calcula las ventas totales por mes y año.
 
-sql
+-- 21 Calcula las ventas totales por mes y año. Muestra primero los datos de los años más recientes.
+SELECT YEAR(OrderDate) AS Year, MONTH(OrderDate) AS Month, SUM(TotalDue) AS TotalSales
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY YEAR(OrderDate), MONTH(OrderDate)
+ORDER BY YEAR DESC, month;
+
+-- 24 Encuentra la suma de SubTotal por empleado y proveedor. Agrupa los datos por empleado
 SELECT EmployeeID, VendorID, SUM(SubTotal) AS TotalSubTotal
-FROM PurchaseOrder
-GROUP BY EmployeeID, VendorID;
-Encuentra la suma de SubTotal por empleado y proveedor.
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY EmployeeID, VendorID
+ORDER BY EmployeeID;
 
-sql
+-- 24 Encuentra la suma de SubTotal por empleado y proveedor. Agrupa los datos por empleado
+SELECT EmployeeID, VendorID, GROUPING_ID(EmployeeID, VendorID) as Niveldeagrupacion, SUM(SubTotal) AS TotalSubTotal
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY GROUPING SETS ((EmployeeID), (VendorID))
+ORDER BY EmployeeID;
+
+-- 25 Cuenta cuántas órdenes se enviaron en cada fecha.
 SELECT ShipDate, COUNT(*) AS OrdersPerShipDate
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY ShipDate;
-Cuenta cuántas órdenes se enviaron en cada fecha.
 
-sql
+
+-- 26 Encuentra el valor máximo de TotalDue para cada año.
 SELECT YEAR(OrderDate) AS Year, MAX(TotalDue) AS MaxTotalDue
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY YEAR(OrderDate);
-Encuentra el valor máximo de TotalDue para cada año.
 
-sql
+-- 27 Encuentra proveedores cuyo total de Freight supera los 1,000.
 SELECT VendorID, SUM(Freight) AS TotalFreightPerVendor
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY VendorID
 HAVING SUM(Freight) > 1000;
-Encuentra proveedores cuyo total de Freight supera los 1,000.
 
-sql
+-- 28 Cuenta cuántos empleados diferentes trabajan en órdenes con cada estado.
 SELECT Status, COUNT(DISTINCT EmployeeID) AS EmployeesPerStatus
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY Status;
-Cuenta cuántos empleados diferentes trabajan en órdenes con cada estado.
 
-sql
+-- 29 Calcula el promedio de TaxAmt por mes.
 SELECT MONTH(OrderDate) AS Month, AVG(TaxAmt) AS AvgTaxAmt
-FROM PurchaseOrder
-GROUP BY MONTH(OrderDate);
-Calcula el promedio de TaxAmt por mes.
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY MONTH(OrderDate)
+ORDER BY Month;
 
-sql
+
+-- 30 Ordena los proveedores por su total de SubTotal en orden descendente.
 SELECT VendorID, COUNT(*) AS Orders, SUM(SubTotal) AS TotalSubTotal
-FROM PurchaseOrder
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY VendorID
 ORDER BY TotalSubTotal DESC;
-Ordena los proveedores por su total de SubTotal en orden descendente.
 
-sql
+
+-- 31 Encuentra el Freight mínimo y máximo por empleado.
 SELECT EmployeeID, MIN(Freight) AS MinFreight, MAX(Freight) AS MaxFreight
-FROM AdventureWorks2022.Purchasing.PurchaseOrderHeader
-	
+FROM Purchasing.PurchaseOrderHeader
 GROUP BY EmployeeID;
-Encuentra el Freight mínimo y máximo por empleado.
+
+-- 32 Elabora una lista con los códigos de los métodos de envíos
+SELECT STRING_AGG(CAST(ShipMethodID AS NVARCHAR(MAX)), ', ') AS MetodosEnvio
+FROM Purchasing.PurchaseOrderHeader;
+
+-- 33 Elabora una lista con los nombres de las tiendas Atendidas por cada vendedor
+SELECT SalesPersonID, STRING_AGG(CAST(Name AS NVARCHAR(MAX)), ', ') AS ListaTiendas
+FROM [Sales].[Store]
+GROUP BY SalesPersonID;
+
+select * from [AdventureWorks2022].[Sales].[Store]
 
 
+-- 24 Encuentra la suma de SubTotal por empleado y proveedor. Agrupa los datos por empleado
+SELECT EmployeeID, VendorID, GROUPING_ID(EmployeeID, VendorID) as Niveldeagrupacion, SUM(SubTotal) AS TotalSubTotal
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY GROUPING SETS ((EmployeeID), (VendorID));
+ORDER BY EmployeeID;
+
+SELECT EmployeeID, ShipMethodID,
+       GROUPING_ID(EmployeeID, ShipMethodID) AS GroupingID,
+       COUNT(*) AS TotalOrders
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY GROUPING SETS ((EmployeeID), (ShipMethodID), ());
+
+
+SELECT EmployeeID, 
+       ShipMethodID, 
+       GROUPING(EmployeeID) AS IsGroupedByEmployee, 
+       GROUPING(ShipMethodID) AS IsGroupedByShipMethod, 
+       COUNT(*) AS TotalOrders
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY GROUPING SETS ((EmployeeID), (ShipMethodID), ());
+
+SELECT EmployeeID, VendorID, COUNT(*) AS TotalSubTotal
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY EmployeeID, VendorID
+ORDER BY EmployeeID;
+
+-- 24 Encuentra la suma de SubTotal por empleado y proveedor. Agrupa los datos por empleado
+SELECT EmployeeID, VendorID, GROUPING_ID(EmployeeID, VendorID) as Niveldeagrupacion, COUNT(*) AS TotalSubTotal
+FROM Purchasing.PurchaseOrderHeader
+GROUP BY GROUPING SETS ((EmployeeID), (VendorID))
+ORDER BY EmployeeID;
 /*
 
 
@@ -197,7 +268,7 @@ Encuentra el Freight mínimo y máximo por empleado.
 
 ¿Cuál es el promedio de TotalDue para cada año basado en OrderDate?
 
-¿Qué PurchaseOrderID tiene el mayor valor de Freight asociado?
+¿Qué Purchasing.PurchaseOrderHeaderID tiene el mayor valor de Freight asociado?
 
 ¿Cuál es la suma total de TaxAmt por cada combinación de Status y ShipMethodID?
 
