@@ -1,3 +1,6 @@
+SELECT * FROM SYS.TABLES;
+SELECT * FROM SYS.partitions;
+
 SELECT 
     t.NAME AS TableName,
     p.rows AS RowCounts

@@ -1,0 +1,14 @@
+use AdventureWorks2022;
+
+SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_CATALOG = 'AdventureWorks2022';
+
+
+DECLARE @tableCount INT;
+SELECT @tableCount = count(TABLE_NAME) 
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_CATALOG = 'AdventureWorks2022';
+
+
+PRINT 'La base de datos tiene ' + CAST(@tableCount AS VARCHAR) + ' tablas';
