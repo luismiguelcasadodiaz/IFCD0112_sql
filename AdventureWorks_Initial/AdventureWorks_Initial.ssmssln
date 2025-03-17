@@ -9,6 +9,8 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Join_two", "Join_two\Join_t
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Apol", "Apol\Apol.ssmssqlproj", "{103FB4AA-FD33-46A7-9235-5335E8BD1A68}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Summarize_data_queries", "Summarize_data_queries\Summarize_data_queries.ssmssqlproj", "{09D1BD3E-3E5E-4A73-822F-95F130AE8A6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
@@ -16,8 +18,9 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B15EFDB2-85D3-4A85-B27C-C87E2F5E0D96}.Default|Default.ActiveCfg = Default
 		{FE28ED08-B7FA-481E-885D-A147B9EB2B6B}.Default|Default.ActiveCfg = Default
-		{C19AE503-CEC0-4D55-B037-AFE005DD4F98}.Default|Default.ActiveCfg = Default
 		{103FB4AA-FD33-46A7-9235-5335E8BD1A68}.Default|Default.ActiveCfg = Default
+		{BF771D6F-0B66-45DB-8C0F-4FBF8913686D}.Default|Default.ActiveCfg = Default
+		{09D1BD3E-3E5E-4A73-822F-95F130AE8A6B}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

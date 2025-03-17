@@ -5,7 +5,14 @@
       <Items />
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
-      <Items />
+      <Items>
+        <FileNode Name="ROLLUP_CUBE_summaries.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ROLLUP_CUBE_summaries.sql</FullPath>
+        </FileNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
       <Items />
