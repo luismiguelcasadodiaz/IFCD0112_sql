@@ -2,7 +2,23 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Basic_Selects">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="SERVIDORDELL:SERVIDORDELL\lcasado">
+          <Created>2025-03-17T22:54:49.1903886+01:00</Created>
+          <Type>SQL</Type>
+          <Server>SERVIDORDELL</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <HostNameInServerCertificate />
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
@@ -53,6 +69,18 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Cuenta tablas en DB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ROLLUP_CUBE_ONE_25.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>ROLLUP_CUBE_ONE_25.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ROLLUP_CUBE_summaries.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>ROLLUP_CUBE_summaries.sql</FullPath>
         </FileNode>
         <FileNode Name="Tablas Ordenadas por cantidad FIlas.sql">
           <AssociatedConnectionMoniker />
