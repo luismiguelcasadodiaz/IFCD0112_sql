@@ -87,8 +87,8 @@ M				F		49
 S				F		35
 NULL			F		84
 M				M		97
-S				M	1	09
-NULL			M	2	06
+S				M		109
+NULL			M		206
 NULL			NULL	290
 */
 
@@ -98,13 +98,13 @@ columnas al resultado de nuestra consulta con la función GROUPING( columna)
 QUe nos marcará con un uno la fila que sitei un sibtotal para la columna
 */
 
-SELECT MaritalStatus, Gender, count(*) AS TotalVentas,
+SELECT MaritalStatus, Gender, count(*) AS Totalempleados,
     GROUPING(MaritalStatus) as Grupo_EstadoCivil,
     GROUPING(Gender) as Grupo_genero
 FROM [AdventureWorks2022].[HumanResources].[Employee]
 GROUP BY ROLLUP (MaritalStatus, Gender)
 
-SELECT  Gender, MaritalStatus,count(*) AS TotalVentas,
+SELECT  Gender, MaritalStatus,count(*) AS Totalempleados,
     GROUPING(MaritalStatus) as Grupo_EstadoCivil,
     GROUPING(Gender) as Grupo_genero
 FROM [AdventureWorks2022].[HumanResources].[Employee]
@@ -114,12 +114,13 @@ GROUP BY ROLLUP ( Gender, MaritalStatus)
 /* veamos un ejemplo con tres columnas de resumen */
 
 /*suma las ventas diarias y calcula el subtotal por mes y por año*/
-
+SET STATISTICS TIME ON;
 SELECT 
 	YEAR(OrderDate) AS año, 
 	MONTH(OrderDate) AS Mes, 
 	DAY(OrderDate) AS día,
 	FORMAT(SUM(TotalDue), 'C', 'en-US') AS TotalVentas,
+	count(*) as TotalFacturas,
     GROUPING(YEAR(OrderDate)) as AgrupandoAño,
     GROUPING(MONTH(OrderDate)) as AgrupandoMes, 
 	GROUPING(DAY(orderdate)) as Agrupandoday
