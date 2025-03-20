@@ -16,3 +16,34 @@ where YEAR(fecha) = 2018 AND [Tipo Producto] = 'TV' and Pais_FK = 2
 GROUP BY Pais_txt, DAY(fecha);
 
 
+
+WITH BeneficioPorMes AS (
+    SELECT 
+        Pais_txt,
+        DATEPART(MONTH, fecha) AS Mes,
+        SUM(Ingresos - gastos) AS Beneficio
+    FROM 
+        Datos
+    WHERE 
+        YEAR(fecha) = 2018
+    GROUP BY 
+        Pais, DATEPART(MONTH, fecha)
+),
+MesesMaxMin AS (
+    SELECT
+        Pais,
+        Mes AS MejorMes,
+        ROW_NUMBER() OVER (PARTITION BY Pais ORDER BY Beneficio DESC) AS RangoMax,
+        Mes AS PeorMes,
+        ROW_NUMBER() OVER (PARTITION BY Pais ORDER BY Beneficio ASC) AS RangoMin
+    FROM 
+        BeneficioPorMes
+)
+SELECT 
+    Pais_txt,
+    MAX(CASE WHEN RangoMax = 1 THEN MejorMes END) AS MejorMes,
+    MAX(CASE WHEN RangoMin = 1 THEN PeorMes END) AS PeorMes
+FROM 
+    MesesMaxMin
+GROUP BY 
+    Pais_txt;
