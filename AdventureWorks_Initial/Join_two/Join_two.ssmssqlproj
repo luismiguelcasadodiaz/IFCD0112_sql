@@ -2,48 +2,32 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Join_two">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items>
-        <ConnectionNode Name="(local):curso">
-          <Created>2025-03-19T09:17:42.6859823+01:00</Created>
-          <Type>SQL</Type>
-          <Server>(local)</Server>
-          <UserName>curso</UserName>
-          <Authentication>SQL</Authentication>
-          <InitialDB />
-          <LoginTimeout>30</LoginTimeout>
-          <TrustServerCertificate>True</TrustServerCertificate>
-          <HostNameInServerCertificate />
-          <EncryptionOption>True</EncryptionOption>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-      </Items>
+      <Items />
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="01_Apellidos_país.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>01_Apellidos_país.sql</FullPath>
         </FileNode>
         <FileNode Name="02_Direcciones_cliente_Franceses.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>02_Direcciones_cliente_Franceses.sql</FullPath>
         </FileNode>
         <FileNode Name="03_Stores_canada.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>03_Stores_canada.sql</FullPath>
         </FileNode>
         <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>SQLQuery1.sql</FullPath>
         </FileNode>
         <FileNode Name="Tablas Ordenadas por filas.sql">

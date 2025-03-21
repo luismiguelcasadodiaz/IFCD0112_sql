@@ -47,11 +47,17 @@ group by Gender;
 select gender, avg(year(HireDate) - year(BirthDate)) from HumanResources.Employee
 group by gender;
 
-select Gender, MaritalStatus ,year(GETDATE()) - year(BirthDate) from HumanResources.Employee
+-- Calcula la edad media de los empleados.
+select Gender, MaritalStatus ,AVG(year(GETDATE()) - year(BirthDate)) from HumanResources.Employee
 group by Gender, MaritalStatus
 order by gender;
 
+-- Calcula la edad antiguedad media de los empleados.
+select Gender, MaritalStatus ,AVG(year(GETDATE()) - year(HireDate)) from HumanResources.Employee
+group by ROLLUP(Gender, MaritalStatus)
+order by gender;
 
+SET STATISTICS TIME ON
 SELECT 
     Gender, MaritalStatus,
     COUNT(*) * 100.0 / (SELECT COUNT(*) FROM HumanResources.Employee) AS Percentage

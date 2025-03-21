@@ -3,21 +3,6 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="(local):curso">
-          <Created>2025-03-19T12:29:01.6287684+01:00</Created>
-          <Type>SQL</Type>
-          <Server>(local)</Server>
-          <UserName>curso</UserName>
-          <Authentication>SQL</Authentication>
-          <InitialDB>AdventureWorks2022</InitialDB>
-          <LoginTimeout>30</LoginTimeout>
-          <TrustServerCertificate>True</TrustServerCertificate>
-          <HostNameInServerCertificate />
-          <EncryptionOption>True</EncryptionOption>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
         <ConnectionNode Name="SERVIDORDELL:SERVIDORDELL\lcasado">
           <Created>2025-03-20T01:40:54.8348071+01:00</Created>
           <Type>SQL</Type>
@@ -38,9 +23,9 @@
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="best_American_cat.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>best_American_cat.sql</FullPath>
         </FileNode>
         <FileNode Name="CREATE_CONTINENTES.sql">
@@ -74,9 +59,9 @@
           <FullPath>QUery Verificacion.sql</FullPath>
         </FileNode>
         <FileNode Name="Ventas_TV_oceania_2017.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>Ventas_TV_oceania_2017.sql</FullPath>
         </FileNode>
       </Items>

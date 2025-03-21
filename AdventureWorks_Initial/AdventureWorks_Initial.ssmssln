@@ -11,16 +11,19 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Apol", "Apol\Apol.ssmssqlpr
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Intel", "Intel\Intel.ssmssqlproj", "{8B045289-CC8B-4BC6-AB41-65E4A98A3847}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "DDL", "DDL\DDL.ssmssqlproj", "{2800CAB5-0E0A-4016-A37A-81DFBA49AF01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{953B79AF-9BC1-4EF5-95D2-6045A320218E}.Default|Default.ActiveCfg = Default
 		{B15EFDB2-85D3-4A85-B27C-C87E2F5E0D96}.Default|Default.ActiveCfg = Default
 		{FE28ED08-B7FA-481E-885D-A147B9EB2B6B}.Default|Default.ActiveCfg = Default
 		{103FB4AA-FD33-46A7-9235-5335E8BD1A68}.Default|Default.ActiveCfg = Default
-		{4C56FB04-650C-4A1C-B99C-46D36E4A6506}.Default|Default.ActiveCfg = Default
 		{8B045289-CC8B-4BC6-AB41-65E4A98A3847}.Default|Default.ActiveCfg = Default
+		{2800CAB5-0E0A-4016-A37A-81DFBA49AF01}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

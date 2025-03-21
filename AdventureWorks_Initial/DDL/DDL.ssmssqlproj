@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Intel">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DDL">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items />
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="Create DB y Table.sql">
+        <FileNode Name="Create_Table_1.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>Create DB y Table.sql</FullPath>
+          <FullPath>Create_Table_1.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
