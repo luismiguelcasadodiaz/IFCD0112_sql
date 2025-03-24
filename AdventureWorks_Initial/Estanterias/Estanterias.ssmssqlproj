@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DDL">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Estanterias">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="(local):curso">
-          <Created>2025-03-21T11:23:29.0733947+01:00</Created>
+          <Created>2025-03-24T12:26:11.2603918+01:00</Created>
           <Type>SQL</Type>
           <Server>(local)</Server>
           <UserName>curso</UserName>
@@ -22,23 +22,35 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="Comunidadesd_provincias.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>Comunidadesd_provincias.sql</FullPath>
-        </FileNode>
-        <FileNode Name="Create_Table_1.sql">
+        <FileNode Name="Create DB.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
           <AssociatedConnUserName>curso</AssociatedConnUserName>
-          <FullPath>Create_Table_1.sql</FullPath>
+          <FullPath>Create DB.sql</FullPath>
         </FileNode>
-        <FileNode Name="DB_PER_COM_AUT.sql">
+        <FileNode Name="Create Tables.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
           <AssociatedConnUserName>curso</AssociatedConnUserName>
-          <FullPath>DB_PER_COM_AUT.sql</FullPath>
+          <FullPath>Create Tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Delete_data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <FullPath>Delete_data.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Insert_data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <FullPath>Insert_data.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Show_data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <FullPath>Show_data.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

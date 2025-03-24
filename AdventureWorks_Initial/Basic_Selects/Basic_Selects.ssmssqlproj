@@ -18,7 +18,7 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
-        <ConnectionNode Name="SERVIDORDELL:SERVIDORDELL\lcasado">
+        <ConnectionNode Name="SERVIDORDELL:CITRIXDA\campusctec">
           <Created>2025-03-20T01:53:20.7942951+01:00</Created>
           <Type>SQL</Type>
           <Server>SERVIDORDELL</Server>
@@ -50,9 +50,9 @@
           <FullPath>02_CabecerasFacturas.sql</FullPath>
         </FileNode>
         <FileNode Name="03_PO_header_preguntas.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
           <FullPath>03_PO_header_preguntas.sql</FullPath>
         </FileNode>
         <FileNode Name="03_PO_header_soluciones.sql">
@@ -164,9 +164,9 @@
           <FullPath>Pol_01.sql</FullPath>
         </FileNode>
         <FileNode Name="Porcentajes.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
+          <AssociatedConnUserName>curso</AssociatedConnUserName>
           <FullPath>Porcentajes.sql</FullPath>
         </FileNode>
         <FileNode Name="Raul_01.sql">
