@@ -27,3 +27,7 @@ VALUES
 ('Chaqueta de Alfredo', 12,1,6),
 ('Cuchillo de cortar pan', 34,2,9),
 ('Sábanas de las literas de las gemelas', 56,3,3)
+
+select * from Espacios;
+exec dbo.create_estanteria 3;
+select * from Espacios;
