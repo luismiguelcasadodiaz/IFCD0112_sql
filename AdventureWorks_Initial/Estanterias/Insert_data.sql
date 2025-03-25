@@ -29,5 +29,8 @@ VALUES
 ('Sábanas de las literas de las gemelas', 56,3,3)
 
 select * from Espacios;
-exec dbo.create_estanteria 3;
+delete from Espacios;
+exec dbo.create_estanteria 4;
 select * from Espacios;
+
+CREATE VIEW Almacen_overview AS

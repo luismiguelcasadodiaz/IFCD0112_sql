@@ -18,10 +18,11 @@ AS
 	END
 	-- Obtencion de la PK del aula
 	DECLARE @Aula_key tinyint
-	SELECT @Aula_key = Aula_PK FROM aulas WHERE Aula_nom = 'Enero'
+	SELECT @Aula_key = Aula_PK FROM aulas WHERE Aula_nom = @aula
 
 	-- Asingma el aula al alumno
 	UPDATE alumnos 
 	SET Alum_aula_FK = @Aula_key
 	WHERE Alum_nom = @alumno;
+
 	
