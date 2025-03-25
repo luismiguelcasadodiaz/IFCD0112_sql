@@ -31,3 +31,19 @@ on ta_PK = AR_Tar_FK
 inner join Espacios
 on ES_PK = AR_esp_FK
 GROUP BY ES_Est
+
+
+CREATE VIEW Almacen_overview AS
+select 
+ES_est as Est,
+ES_alt as Fil,
+ES_lar as Col,
+SUM(AR_VAL) as valor 
+FROM Articulos 
+inner join TiposArticulos
+on ta_PK = AR_Tar_FK
+RIGHT OUTER join Espacios
+on ES_PK = AR_esp_FK
+GROUP BY ES_est, ES_alt, ES_lar
+
+select top 1 * from Almacen_overview WHERE VALOR IS NULL;
