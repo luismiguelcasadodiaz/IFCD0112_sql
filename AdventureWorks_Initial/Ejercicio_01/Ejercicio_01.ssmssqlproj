@@ -40,6 +40,12 @@
           <AssociatedConnUserName />
           <FullPath>DB_Creacion.sql</FullPath>
         </FileNode>
+        <FileNode Name="SP_insert.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SP_insert.sql</FullPath>
+        </FileNode>
         <FileNode Name="T_Create_01_Comunidades.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>

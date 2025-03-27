@@ -2,60 +2,44 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Academia">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items>
-        <ConnectionNode Name="(local):curso">
-          <Created>2025-03-25T10:32:14.9675375+01:00</Created>
-          <Type>SQL</Type>
-          <Server>(local)</Server>
-          <UserName>curso</UserName>
-          <Authentication>SQL</Authentication>
-          <InitialDB>Estanterias</InitialDB>
-          <LoginTimeout>30</LoginTimeout>
-          <TrustServerCertificate>True</TrustServerCertificate>
-          <HostNameInServerCertificate />
-          <EncryptionOption>True</EncryptionOption>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-      </Items>
+      <Items />
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="01_create_database.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>01_create_database.sql</FullPath>
         </FileNode>
         <FileNode Name="02_create_tables.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>02_create_tables.sql</FullPath>
         </FileNode>
         <FileNode Name="03_insert_values.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>03_insert_values.sql</FullPath>
         </FileNode>
         <FileNode Name="04_show_data.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>04_show_data.sql</FullPath>
         </FileNode>
         <FileNode Name="SP_Registra_entrada.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>SP_Registra_entrada.sql</FullPath>
         </FileNode>
         <FileNode Name="SP_Registra_salida.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>SP_Registra_salida.sql</FullPath>
         </FileNode>
       </Items>
