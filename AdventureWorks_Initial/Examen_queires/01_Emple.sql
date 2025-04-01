@@ -1,7 +1,8 @@
 /*
 
 
-¿Cuántos empleados diferentes tienen más de 17 años trabajando en la empresa? ==> 7
+¿Cuántos empleados de la tabla HumanResources.Employee tienen más de 17 años trabajando en la empresa? 
+==> 7
 
 */
 
