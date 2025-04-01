@@ -13,13 +13,13 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Intel", "Intel\Intel.ssmssq
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "DDL", "DDL\DDL.ssmssqlproj", "{2800CAB5-0E0A-4016-A37A-81DFBA49AF01}"
 EndProject
-<<<<<<< HEAD
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Ejercicio_01", "Ejercicio_01\Ejercicio_01.ssmssqlproj", "{C5F31A82-95D2-4FC8-86FA-0BF0B0C0F882}"
-=======
+EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Estanterias", "Estanterias\Estanterias.ssmssqlproj", "{35874F96-DB96-452A-B76C-CC82A147A159}"
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Academia", "Academia\Academia.ssmssqlproj", "{828E1425-C48F-45D1-8B22-7C3F655B4CD5}"
->>>>>>> b43a0d1e5b67d83b3062a1e1ed359dc34e9f6605
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Examen_queires", "Examen_queires\Examen_queires.ssmssqlproj", "{971DACC5-6D4B-44C9-B46A-A4411ED9B08F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,11 @@ Global
 		{103FB4AA-FD33-46A7-9235-5335E8BD1A68}.Default|Default.ActiveCfg = Default
 		{8B045289-CC8B-4BC6-AB41-65E4A98A3847}.Default|Default.ActiveCfg = Default
 		{2800CAB5-0E0A-4016-A37A-81DFBA49AF01}.Default|Default.ActiveCfg = Default
-<<<<<<< HEAD
 		{C5F31A82-95D2-4FC8-86FA-0BF0B0C0F882}.Default|Default.ActiveCfg = Default
-		{19BC2005-4C10-4DA5-98C7-C760BE3907C4}.Default|Default.ActiveCfg = Default
-=======
 		{35874F96-DB96-452A-B76C-CC82A147A159}.Default|Default.ActiveCfg = Default
-		{EBC63290-91AD-4889-9E24-066708507705}.Default|Default.ActiveCfg = Default
 		{828E1425-C48F-45D1-8B22-7C3F655B4CD5}.Default|Default.ActiveCfg = Default
->>>>>>> b43a0d1e5b67d83b3062a1e1ed359dc34e9f6605
+		{4AD08E6C-4EC4-4EA9-B6B7-68FF23512055}.Default|Default.ActiveCfg = Default
+		{971DACC5-6D4B-44C9-B46A-A4411ED9B08F}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
