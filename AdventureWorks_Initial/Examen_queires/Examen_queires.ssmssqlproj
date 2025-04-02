@@ -52,6 +52,12 @@
           <AssociatedConnUserName />
           <FullPath>05_mejor_pagado.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
