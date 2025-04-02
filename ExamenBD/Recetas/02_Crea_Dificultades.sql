@@ -1,5 +1,0 @@
-CREATE TABLE Dificultades
-(
-	dif_PK TINYINT IDENTITY(1,1) PRIMARY KEY,
-	dif_nom VARCHAR(10) UNIQUE
-)
