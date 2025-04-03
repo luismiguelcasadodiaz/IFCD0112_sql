@@ -52,11 +52,47 @@
           <AssociatedConnUserName />
           <FullPath>05_mejor_pagado.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="06_coste_calidad.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>06_coste_calidad.sql</FullPath>
+        </FileNode>
+        <FileNode Name="07_AVG_Pri_PUR.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
+          <FullPath>07_AVG_Pri_PUR.sql</FullPath>
+        </FileNode>
+        <FileNode Name="20 _Lista_emplea.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>20 _Lista_emplea.sql</FullPath>
+        </FileNode>
+        <FileNode Name="21_cliente 19000.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>21_cliente 19000.sql</FullPath>
+        </FileNode>
+        <FileNode Name="30_Subcategory_079.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>30_Subcategory_079.sql</FullPath>
+        </FileNode>
+        <FileNode Name="31_Mes_max_contrato_M.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>31_Mes_max_contrato_M.sql</FullPath>
+        </FileNode>
+        <FileNode Name="99_frecuente_nombre.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>99_frecuente_nombre.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
