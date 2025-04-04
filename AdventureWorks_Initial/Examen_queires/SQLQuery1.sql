@@ -1,19 +1,15 @@
 /*
-Crea una tabla de dos columnas. 
-La primera columna es el nombre del departamento (HumanResources.Department).
-La segunda consulta es la lista, separando cada empleado con una barra verticale "|", 
-del apellido y el nombre (Person.Person), separados por una coma,  de cada empleado del departamento.
 
-La tabla mostrará los datos de los departamentos con menos de 5 empleados.
+¿En qué categoría de producto (ProductCategoryID) el precio promedio (ListPrice) está entre 100 y 150, considerando únicamente las categorías que tienen al menos 5 productos registrados?
 
 */
 
-SELECT 
-    d.Name AS Departamento,
-    STRING_AGG(p.FirstName + ', ' + p.LastName, ' | ') AS Empleados,
-	Count (*) as empleados
-FROM HumanResources.EmployeeDepartmentHistory dh
-JOIN Person.Person p ON dh.BusinessEntityID = p.BusinessEntityID
-JOIN HumanResources.Department d ON dh.DepartmentID = d.DepartmentID
-GROUP BY dh.DepartmentID, d.Name
-HAVING Count (*) <5
+
+SELECT ps.ProductCategoryID,   AVG(p.ListPrice), COUNT(p.ProductID)
+FROM Production.Product AS p
+JOIN Production.ProductSubcategory AS ps
+ON p.ProductSubcategoryID = ps.ProductSubcategoryID
+WHERE p.ListPrice > 0
+GROUP BY ps.ProductCategoryID, 
+HAVING AVG(p.ListPrice) BETWEEN 100 AND 150 
+       AND COUNT(p.ProductID) >= 5;

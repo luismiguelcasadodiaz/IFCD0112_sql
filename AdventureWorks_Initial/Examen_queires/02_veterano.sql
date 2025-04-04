@@ -1,6 +1,6 @@
 /*
 
-¿Cuál es el apellido del empleado de mayor edad? 
+¿Cuál es el apellido ([Person].[Person]) del empleado de mayor edad ([HumanResources].[Employee])? 
 -- Jiang
 */
 

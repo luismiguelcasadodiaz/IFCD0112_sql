@@ -1,9 +1,9 @@
 /*
-¿Cuál es el apellido(Person.person) del empleado (HumanResources.Employee) con el segundo salario base más alto (HumanResources.EmployeePayHistory.Rate)?
+¿Cuál es el apellido(Person.person) de los dos empleados (HumanResources.Employee) con el salario base más alto (HumanResources.EmployeePayHistory.Rate)?
 ==> Hamilton
 */
 
-SELECT P.LastName as apellido, EPH.Rate as salario FROM HumanResources.Employee as E
+SELECT TOP 2 P.LastName as apellido, EPH.Rate as salario FROM HumanResources.Employee as E
 INNER JOIN HumanResources.EmployeePayHistory as EPH
 ON EPH.BusinessEntityID = E.BusinessEntityID
 INNER JOIN Person.Person as P
