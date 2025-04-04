@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/UF_2175_Diseño</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">UF_2175_Diseño<br></p>]]></text>
+    </info>
+    <idnumber>UF2175</idnumber>
+  </question>
+
+<!-- question: 48770  -->
+  <question type="multichoice">
+    <name>
+      <text>CON 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>¿Qué condición CHECK utilizarías para garantizar que una columna llamada </strong><code>FechaNacimiento</code><strong> solo acepte fechas anteriores a la fecha actual?</strong><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (FechaNacimiento &lt; GETDATE())<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (FechaNacimiento &lt;= SYSDATE)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (FechaNacimiento &lt; CURRENT_DATE)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (FechaNacimiento &gt; GETDATE())<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48771  -->
+  <question type="multichoice">
+    <name>
+      <text>CON 02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>¿Cuál de las siguientes restricciones CHECK asegura que una columna llamada </strong><code>Edad</code><strong> solo acepte valores entre 0 y 120?</strong><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (Edad &gt; 0 AND Edad &lt; 120)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (Edad BETWEEN 0 AND 120)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (Edad &gt; 0 OR Edad &lt; 120)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK (Edad = 0 TO 120)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48749  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué instrucción DDL se utiliza para crear una nueva tabla en una base de datos?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">INSERT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CREATE TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">ALTER TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DROP TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48750  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué instrucción elimina una tabla de una base de datos?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DELETE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DROP TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">TRUNCATE TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CREATE TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48751  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué instrucción se utiliza para modificar la estructura de una tabla existente?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">ALTER TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">UPDATE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">SELECT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">INSERT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48752  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué palabra clave se utiliza para añadir una nueva columna a una tabla?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">ADD</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">ALTER</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">MODIFY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CREATE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48753  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Cuál de las siguientes instrucciones crea una base de datos?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CREATE DATABASE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CREATE TABLE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">ALTER DATABASE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DROP DATABASE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48754  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué palabra clave permite añadir restricciones a una columna en una tabla?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CONSTRAINT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">MODIFY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">ALTER</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DELETE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48755  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 07</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué palabra clave se utiliza para especificar que una columna no puede contener valores nulos?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">NOT NULL</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">NULL</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CONSTRAINT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DEFAULT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48756  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 08</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Qué tipo de restricción asegura que los valores de una columna sean únicos en toda la tabla?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">PRIMARY KEY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">UNIQUE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">FOREIGN KEY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48757  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 09</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[¿Cual de estas restricciones no se puede repetir en una instrucción create?<p dir="ltr" style="text-align: left;"></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">PRIMARY KEY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">UNIQUE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">FOREIGN KEY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48767  -->
+  <question type="multichoice">
+    <name>
+      <text>DDL 10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué regla de integridad asegura que los valores de una columna sean válidos según una condición personalizada definida en la tabla?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">UNIQUE</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHECK</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DEFAULT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">PRIMARY KEY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48829  -->
+  <question type="multichoice">
+    <name>
+      <text>QUERY 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Cuántos empleados de la tabla HumanResources.Employee tienen más de 17 años trabajando en la empresa?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">7</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">8</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">9</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">10</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48773  -->
+  <question type="multichoice">
+    <name>
+      <text>QUERY 02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Cuál es el apellido del empleado de mayor edad?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p dir="ltr">SELECT TOP 1 p.LastName, MIN(E.BirthDate) as Nacido</p><p dir="ltr">&nbsp; FROM [AdventureWorks2022].[HumanResources].[Employee] as E</p><p dir="ltr">&nbsp; Inner JOIN [AdventureWorks2022].[Person].[Person] as P</p><p dir="ltr">&nbsp; on P.BusinessEntityID = E.BusinessEntityID</p><p dir="ltr">&nbsp; GROUP BY p.LastName</p><p dir="ltr">&nbsp; Order by MIN(E.BirthDate) ASC</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">&nbsp;Jiang<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Martinez<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Pellow</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Erickson</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48827  -->
+  <question type="multichoice">
+    <name>
+      <text>QUERY 03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Cuál es el valor promedio del salario base (Rate) de todos los empleados de la tabla HumanResources.EmployeePayHistory de la base de datos AdventureWorks?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">17,7588</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">27,88<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">75,88<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">49,23</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48828  -->
+  <question type="multichoice">
+    <name>
+      <text>QUERY 04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><span><span><span style=""><span style="">¿Cuál es el número total de productos disponibles en la </span>base de datos AdventureWorks (tabla </span><code style="">Production.Product</code>)?</span></span><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">504</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">125</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">32767</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">87</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48835  -->
+  <question type="multichoice">
+    <name>
+      <text>QUERY 05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr">¿Cuál es el apellido(Person.person) del empleado (HumanResources.Employee) con el segundo salario base más alto (HumanResources.EmployeePayHistory.Rate) en la base de datos AdventureWorks?</p><p dir="ltr"></p><p dir="ltr"></p><p dir="ltr"></p><p dir="ltr"></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Hamilton<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Sánchez<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p dir="ltr">Welcker</p><p dir="ltr"></p><br><p></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Duffy<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48763  -->
+  <question type="multichoice">
+    <name>
+      <text>REL 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">En una relación entre dos tablas, ¿qué tipo de datos deberían compartir las columnas que forman la clave primaria y la clave foránea respectivamente?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Diferente tipo de datos siempre que se conviertan implícitamente<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Deben ser del mismo tamaño pero no necesariamente del mismo tipo<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">No es necesario que compartan tipo de datos<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Deben ser del mismo tipo de datos<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48764  -->
+  <question type="multichoice">
+    <name>
+      <text>REL 02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Cuando se define una relación entre dos tablas mediante claves primaria y foránea, ¿cuál es el principal criterio relacionado con el tipo de datos que se debe cumplir?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Las columnas pueden ser de tipos distintos si ambas permiten valores NULL<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Las columnas solo necesitan ser del mismo tipo si son usadas en índices<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">No importa el tipo de datos mientras las restricciones se puedan implementar<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Las columnas deben ser del mismo tipo y tener configuraciones compatibles<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48765  -->
+  <question type="multichoice">
+    <name>
+      <text>REL 03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué sucede si los tipos de datos de las columnas en los extremos de una relación entre tablas son incompatibles?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">SQL Server convierte automáticamente los tipos de datos durante la relación<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">La relación no se puede crear debido a incompatibilidad de tipos<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">La incompatibilidad puede solucionarse usando operadores específicos<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Se puede crear la relación, pero los datos no serán válidos<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48758  -->
+  <question type="multichoice">
+    <name>
+      <text>TIPOS 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Cuál es la diferencia clave entre los tipos de datos CHAR y VARCHAR en SQL Server?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHAR siempre tiene tamaño fijo, mientras que VARCHAR tiene tamaño variable<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHAR almacena solo números, y VARCHAR almacena texto<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHAR almacena más datos que VARCHAR<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">CHAR no permite valores nulos, mientras que VARCHAR sí<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48760  -->
+  <question type="multichoice">
+    <name>
+      <text>TIPOS 02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p dir="ltr">Con la ayuda de Excel vemos el head y el tail del archivo municipios de España.&nbsp;<img src="@@PLUGINFILE@@/image.png" alt="" role="presentation"><br></p><p dir="ltr">El archivo no tiene una clave primaria. Tienes que crearla.&nbsp;</p><p dir="ltr">Mun_Com_FK es la clave foránea para la comunidad autónoma</p><p dir="ltr"><span>Mun_Pro_FK es la clave foránea para la provincia.</span></p><p dir="ltr"><span>Mun_Num_Ord_Pro es el número de orden alfabético que tiene el municipio dentro de su provincia</span></p><p dir="ltr"><span>DC es un digito de control calculado por el INE</span></p><p dir="ltr"><span>Mun_Nom es el nombre del municipio</span></p><p dir="ltr"></p><p dir="ltr">¿Qué tipo de datos eliges para un nuevo campo clave primaria?</p><br><p></p>]]></text>
+<file name="image.png" path="/" encoding="base64">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</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Tiny int</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Small int</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Int</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Big Int</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">varchar(5)</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48836  -->
+  <question type="multichoice">
+    <name>
+      <text>TIPOS 03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué tipo de datos ofrece SQL Server para almacenar valores monetarios con una precisión fija?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">MONEY</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">FLOAT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">DECIMAL</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">NUMERIC</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48837  -->
+  <question type="multichoice">
+    <name>
+      <text>TIPOS 04</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Qué tipo de datos es más adecuado para almacenar números enteros en un rango entre -32,769 y 32,768?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">INT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">SMALLINT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">BIGINT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">TINYINT</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48766  -->
+  <question type="multichoice">
+    <name>
+      <text>TIPOS 05</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>¿Cuál es el objetivo principal de usar el comando </strong><code>CREATE TYPE</code><strong> en SQL Server?</strong><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Definir un nuevo esquema de base de datos<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Crear un tipo de datos definido por el usuario para utilizarlo en tablas, procedimientos almacenados o funciones<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Modificar un tipo de datos existente en el sistema<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Asignar un alias a un esquema de base de datos<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 48775  -->
+  <question type="multichoice">
+    <name>
+      <text>TIPOS 06</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">¿Cuál de las siguientes afirmaciones es correcta sobre el uso de <code>CHAR(10)</code> y <code>VARCHAR(10)</code> en T-SQL en términos de eficiencia?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><code>VARCHAR(10)</code> es más eficiente en términos de almacenamiento si los datos son de longitud variable y suelen ser más cortos que 10 caracteres.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><code>CHAR(10)</code> siempre ocupa menos espacio de almacenamiento que <code>VARCHAR(10)</code>, independientemente de los datos almacenados.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><code>CHAR(10)</code> y <code>VARCHAR(10)</code> tienen el mismo rendimiento, sin importar la longitud de los datos.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><code>VARCHAR(10)</code> siempre es más rápido que <code>CHAR(10)</code> en operaciones de lectura.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
