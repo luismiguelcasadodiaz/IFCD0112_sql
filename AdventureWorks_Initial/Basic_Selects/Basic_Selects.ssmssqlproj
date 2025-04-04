@@ -18,7 +18,7 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
-        <ConnectionNode Name="SERVIDORDELL:CITRIXDA\campusctec">
+        <ConnectionNode Name="SERVIDORDELL:SERVIDORDELL\lcasado">
           <Created>2025-03-20T01:53:20.7942951+01:00</Created>
           <Type>SQL</Type>
           <Server>SERVIDORDELL</Server>
@@ -68,20 +68,20 @@
           <FullPath>04_PO_header_AGG_Explicacion.sql</FullPath>
         </FileNode>
         <FileNode Name="04_PO_header_AGG_preguntas.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>04_PO_header_AGG_preguntas.sql</FullPath>
         </FileNode>
         <FileNode Name="04_PO_header_AGG_Soluciones.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>04_PO_header_AGG_Soluciones.sql</FullPath>
         </FileNode>
         <FileNode Name="Alex.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Alex.sql</FullPath>
         </FileNode>
@@ -92,8 +92,8 @@
           <FullPath>Carlos.sql</FullPath>
         </FileNode>
         <FileNode Name="Christian_01.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Christian_01.sql</FullPath>
         </FileNode>
@@ -110,14 +110,14 @@
           <FullPath>Dani_01.sql</FullPath>
         </FileNode>
         <FileNode Name="Dani_b.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Dani_b.sql</FullPath>
         </FileNode>
         <FileNode Name="Didac_01.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Didac_01.sql</FullPath>
         </FileNode>
@@ -128,9 +128,9 @@
           <FullPath>Eric_P.sql</FullPath>
         </FileNode>
         <FileNode Name="Erik_01.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
           <FullPath>Erik_01.sql</FullPath>
         </FileNode>
         <FileNode Name="Guillem_01.sql">
@@ -140,8 +140,8 @@
           <FullPath>Guillem_01.sql</FullPath>
         </FileNode>
         <FileNode Name="Hector_01.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Hector_01.sql</FullPath>
         </FileNode>
@@ -158,8 +158,8 @@
           <FullPath>Kadhiya_01.sql</FullPath>
         </FileNode>
         <FileNode Name="Pol_01.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Pol_01.sql</FullPath>
         </FileNode>
@@ -176,20 +176,20 @@
           <FullPath>Raul_01.sql</FullPath>
         </FileNode>
         <FileNode Name="ROLLUP_CUBE_ONE_25.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>ROLLUP_CUBE_ONE_25.sql</FullPath>
         </FileNode>
         <FileNode Name="ROLLUP_CUBE_summaries.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local):False:curso</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>(local)</AssociatedConnSrvName>
-          <AssociatedConnUserName>curso</AssociatedConnUserName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
           <FullPath>ROLLUP_CUBE_summaries.sql</FullPath>
         </FileNode>
         <FileNode Name="ROLLUP_TO_BE_OR_NOT_TO_BE.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERVIDORDELL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERVIDORDELL</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>ROLLUP_TO_BE_OR_NOT_TO_BE.sql</FullPath>
         </FileNode>

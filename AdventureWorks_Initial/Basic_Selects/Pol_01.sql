@@ -1,3 +1,5 @@
+
+
 -- Calcual el precio promedio de los productos por año
 
 SELECT

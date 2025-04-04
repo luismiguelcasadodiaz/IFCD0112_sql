@@ -1,6 +1,5 @@
 /*
--- ¿Cual es el Coste total de las unidades rechazadas (RejectedQty) 
-en todos los pedidos de compra [Purchasing].[PurchaseOrderDetail]?
+-- Coste total de las unidades rechazadas (RejectedQty) en todos los pedidos de compra [Purchasing].[PurchaseOrderDetail]
 */
 
 
